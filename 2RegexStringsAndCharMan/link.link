@@ -1,0 +1,30 @@
+https://github.com/230500226/JavaEx3
+
+// String literal vs object
+
+string object will always take more time to execute than string literal because it will construct a new string every time it is executed. 
+
+When you use a string literal the string can be interned, but when you use new String("...") you get a new string object.
+
+In this example both string literals refer the same object:
+
+String a = "abc"; 
+String b = "abc";
+System.out.println(a == b);  // true
+
+Here, 2 different objects are created and they have different references:
+
+String c = new String("abc");
+String d = new String("abc");
+System.out.println(c == d);  // false
+
+In general, you should use the string literal notation when possible. It is easier to read and it gives the compiler a chance to optimize your code.
+
+// Regex expressions
+* = Match zero or more occurences
++ = Matche one or more occurences
+? = Mathes zero or one occurences
+{n} = Matches n occurences
+{n,} = Mathes at least n occurences
+{n,m} = Matches between n and m (inclusive) occurances
+

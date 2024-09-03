@@ -21,6 +21,7 @@ public class courseMan{
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
 
+    // init the gradebook object
         GradeBook myGradeBook = new GradeBook();
 
         System.out.printf( "Initial course name is %s\n", myGradeBook.getCourseName());
